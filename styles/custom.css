@@ -205,8 +205,8 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 	border-radius: 0px;
 	overflow:hidden;
 	border-top-width: 1px;
-	border-right-width: 1px;
 	border-bottom-width: 1px;
+	border-right-width: 1px;
 	border-left-width: 12px;
 	border-top-style: solid;
 	border-right-style: solid;
@@ -217,6 +217,21 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 	border-bottom-color: #E7E8EF;
 	border-left-color: #628FC0;
 }
+
+.shout-box-left-blue {
+	border-right-width: 1px;
+	border-left-width: 12px;
+	border-right-color: #E7E8EF;
+	border-left-color: #628FC0;
+}
+
+.shout-box-right-green {
+	border-left-width: 1px;
+	border-right-width: 12px;
+	border-right-color: #96BC8A;
+	border-left-color: #E7E8EF;
+}
+
 .shout-box .btn-right {
 	float:right;
 	margin-top:10px;

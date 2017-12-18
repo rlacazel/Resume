@@ -68,7 +68,7 @@ TABLE OF CONTENT
     color: #e43700; }
 .timeline-block .timeline-dot {
     /*timeline dot*/
-    background: #1F5694;
+    background: #4177B1;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -79,6 +79,10 @@ TABLE OF CONTENT
     position: absolute;
     top: 5px;
     right: 2%; }
+.timeline-block .timeline-dot-green
+{
+    background: #69B072;
+}
 .timeline-block .timeline-dot i {
     /*dot icon*/
     text-align: center;
@@ -111,6 +115,10 @@ TABLE OF CONTENT
     z-index: -2;
     opacity: 0.4;
     background: #1F5694; }
+.timeline-block .timeline-content-right-green::before {
+    /*horizontal line*/
+	
+    background: #69B072; }
 .timeline-block .timeline-content::after {
     /*horizontal line*/
     clear: both;
@@ -141,9 +149,9 @@ TABLE OF CONTENT
         /*vertical line for education in in min width 768 */
         left: 50%;
         margin-left: -2px;
-        height: 77.1%;
+        height: 85.1%;
         opacity: 0.4;
-        background: #1F5694; }
+        background: #434343; }
 
     #timeline-experience::before {
         /*vertical line for experience in min width 768 */
@@ -151,11 +159,11 @@ TABLE OF CONTENT
         margin-left: -2px;
         height: 69.1%;
         opacity: 0.4;
-        background: #1F5694; }
+        background: #434343; }
 
     .timeline-block {
         /*timeline block in min width 768*/
-        margin: -5em 0; }
+        /*margin: -5em 0;*/ }
     .timeline-block .card {
         margin: 0; }
     .timeline-block .timeline-dot {
@@ -174,12 +182,12 @@ TABLE OF CONTENT
     .timeline-block .timeline-content .timeline-title {
         /*timeline title min width 768*/
         max-width: 100%; }
-    .timeline-block:nth-child(even) .timeline-content {
+    .timeline-block#rightblock .timeline-content{
         /*content to right*/
         float: right; }
-    .timeline-block:nth-child(even) .timeline-content::before {
+    .timeline-block#rightblock .timeline-content::before {
         /*horizontal line*/
         top: 25px;
         left: auto;
-        right: 101.2%;
+        right: 100.0%; /*init : 101.2 */
         z-index: -2; } }
