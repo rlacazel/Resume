@@ -68,7 +68,7 @@ TABLE OF CONTENT
     color: #e43700; }
 .timeline-block .timeline-dot {
     /*timeline dot*/
-    background: #4177B1;
+    background: #628FC0;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -81,7 +81,7 @@ TABLE OF CONTENT
     right: 2%; }
 .timeline-block .timeline-dot-green
 {
-    background: #69B072;
+    background: #8AB17C;
 }
 .timeline-block .timeline-dot i {
     /*dot icon*/
@@ -118,7 +118,7 @@ TABLE OF CONTENT
 .timeline-block .timeline-content-right-green::before {
     /*horizontal line*/
 	
-    background: #69B072; }
+    background: #4CA758; }
 .timeline-block .timeline-content::after {
     /*horizontal line*/
     clear: both;
@@ -132,9 +132,17 @@ TABLE OF CONTENT
     font-weight: normal;
 	font-family: 'Source Sans Pro', sans-serif;
 	margin-bottom: 5px;}
+.timeline-block .timeline-content .timeline-specialtitle {
+    /*timeline blocks title*/
+    max-width: 100%;
+	font-size: 1.4em;
+	line-height: 1.0;
+    font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 5px;}
 .timeline-block .timeline-content .timeline-subtitle {
     /*timeline blocks title*/
-    max-width: 90%;
+    max-width: 100%;
 	font-size: 1.2em;
 	line-height: 1.1;
     font-weight: normal;

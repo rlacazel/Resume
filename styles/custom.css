@@ -199,7 +199,7 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 /* Shout Box */
 .shout-box {
 	margin-bottom:28px;
-	padding:16px 45px 19px 29px;
+	padding:16px 30px 19px 29px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
@@ -221,15 +221,19 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 .shout-box-left-blue {
 	border-right-width: 1px;
 	border-left-width: 12px;
-	border-right-color: #E7E8EF;
+	border-right-color: rgba(98,143,192,0.40);
 	border-left-color: #628FC0;
+	border-top-color: rgba(98,143,192,0.40);
+	border-bottom-color: rgba(98,143,192,0.40);
 }
 
 .shout-box-right-green {
 	border-left-width: 1px;
 	border-right-width: 12px;
-	border-right-color: #96BC8A;
-	border-left-color: #E7E8EF;
+	border-right-color: #8AB17C;
+	border-left-color: rgba(76,167,88,0.40);
+	border-top-color: rgba(76,167,88,0.40);
+	border-bottom-color: rgba(76,167,88,0.40);
 }
 
 .shout-box .btn-right {
