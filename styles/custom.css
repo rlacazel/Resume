@@ -582,3 +582,24 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 .icon_flickr { width:24px; height:24px; background:url('../icons/icons_flickr.png')}
 .icon_flickr:hover {background:url('../icons/icons_flickr_hover.png')}
 
+.accordion-header
+{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 1.4em;
+	line-height: 1.0;
+    font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	cursor: pointer;
+	color: #628FC0;
+}
+
+.accordion-subheader
+{
+	margin-left: 15px;
+	margin-top: -9px;
+	font-size: 1.0em;
+	cursor: pointer;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #628FC0;
+}
