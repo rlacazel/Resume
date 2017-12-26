@@ -31,7 +31,7 @@ if (browser.chrome) {
 }
 jQuery.browser = browser;
 
-document.getElementById('htmlmenu').innerHTML = "<ul class=\"nav nav-pills ddmenu\"><li><a href=\"index.html\">Home</a></li><li><a href=\"phdproject.html\">PhD Project</a></li><li><a href=\"publications.html\">Publications</a></li><li><a href=\"teaching.html\">Teaching</a></li><li><a href=\"otherprojects.html\">Other Projects</a></li></ul>";
+document.getElementById('htmlmenu').innerHTML = "<ul class=\"nav nav-pills ddmenu\"><li><a href=\"index.html\">Home</a></li><li><a href=\"phdproject.html\">PhD Project</a></li><li><a href=\"publications.html\">Publications</a></li><li><a href=\"teaching.html\">Teaching</a></li><li><a href=\"work.html\">Work Exp</a></li><li><a href=\"otherprojects.html\">Other Projects</a></li></ul>";
 
 $(document).ready(function () {
     $('iframe').each(function () {/*fix youtube z-index*/

@@ -603,3 +603,10 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #628FC0;
 }
+
+.img-logo
+{
+	width:150px; /* you can use % */
+    height: auto;
+	margin-right: 10px;
+}
