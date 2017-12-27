@@ -610,3 +610,28 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
     height: auto;
 	margin-right: 10px;
 }
+
+.work-title {
+    /*timeline blocks title*/
+    max-width: 84%;
+	font-size: 1.5em;
+	line-height: 1.0;
+    font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 5px;}
+.work-specialtitle {
+    /*timeline blocks title*/
+    max-width: 100%;
+	font-size: 1.4em;
+	line-height: 1.0;
+    font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 5px;}
+.work-subtitle {
+    /*timeline blocks title*/
+    max-width: 100%;
+	font-size: 1.3em;
+	line-height: 1.1;
+    font-weight: normal;
+	margin-bottom: 10px;
+	color: 	#5C5C5C;}
