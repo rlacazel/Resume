@@ -120,7 +120,7 @@ TABLE OF CONTENT
 	
     background: #4CA758; }
 .timeline-block .timeline-content::after {
-    /*horizontal line*/
+    /*horizontal line*/	
     clear: both;
     content: "";
     display: table; }
