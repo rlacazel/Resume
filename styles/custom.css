@@ -283,7 +283,7 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 
 
 
-body {background-color: rgb(239, 239, 239); background-position: inherit inherit; background-repeat: repeat repeat;}
+body {background-color: rgb(239, 239, 239); background-position: inherit inherit; background-repeat: repeat repeat;overflow: scroll;}
 
 #divBoxed {margin-top: 51px; ;;}
 
