@@ -89,45 +89,17 @@
                 <div class="span12" id="divMain">
                 <!--Edit Main Content Area here-->				
                                           
-                    <h3>Planification de situations critiques pour la formation en environnements virtuels incertains</h3>
-                
+                    <h3>Solving probabilistic planning problems over-constrained by limited risk</h3>
+                    <h4>Definitions: </h6>
+                	<p style="text-align: justify">A planning problem is <strong>over-constrained</strong> when it is not possible to reach all goals because of limited resources (e.g. fuel, energy...). In this case, only a subset of goals can be satisfied. Therefore, each goal is attached a utility score and the objective if to find a plan that satisfy a subset of goals maximizing the total goal utilities. This category of problems have been studied under the name of <strong>Over-Subscription Planning problems (OSPs)</strong>. Let's take an example: we consider that a rover on Mars must reach 4 locations (to explore and collect samples) but it has limited in energy that prevent it from reaching all the locations. In this case, we can say that the problem is over-constrained. We also suppose that each location has a utiliy value corresponding to the level of interest of the location. Therefore, we must select locations that are reachable and maximize the total utility score.</p>
+					<div style="text-align: center"><img src="images/osp1.png"> </img></div>
+				<p style="text-align: justify">In this example, the rover has not enough energy to reach L2. It has selected L1, L3 and L4 as it maximizes the total utility.</p>
             <div class="row-fluid">
-              <p style="text-align: justify"><strong>Résumé :</strong> Nos travaux s'inscrivent dans le cadre de la formation à des situations socio-techniques complexes en environnement virtuel (EV). La planification joue un rôle essentiel pour l’apprentissage humain en EV. Cela permet à la fois de proposer et d'orchestrer des situations d'apprentissage personnalisées et également d'amener l’apprenant vers des scénarios pertinents du point de vue de l'apprentissage. Les environnements virtuels ouvrent des possibilités énormes en terme de variété des situations car il est plus facile et moins coûteux de mettre en place un nouveau scénario et d'adapter l'EV en conséquence plutôt que lors des formations de terrain. C'est parfois également moins dangereux. Toutefois, pour profiter pleinement de cette capacité, il faut être capable de créer et proposer les scénarios pédagogiques qui animeront ces EVs. Ce travail d’écriture est conséquent et constitue ce qu’on appelle l’authoring bottleneck, c'est-à-dire qu'il devient vite impossible d’écrire tous les scénarios face à l'explosion combinatoire que cela représente. Il est donc nécessaire de mettre en place des systèmes de scénarisation génériques, capables de créer des situations adaptables, sans avoir à définir explicitement l’intégralité des scénarios possibles. Nous faisons le choix que les personnages virtuels peuplant l'EV soient autonomes à la fois pour garantir des comportements explicables, et pour qu'ils soient pourvus d'émotions et d'une personnalité. Ainsi, ce qui rend la scénarisation difficile sont les incertitudes engendrées à la fois par la liberté d'action de l'apprenant qui évolue librement dans l'EV et également par les personnages virtuels autonomes qui ne sont pas directement contrôlables par le module de scénarisation. Dans ce contexte complexe, nous proposons d'accompagner la planification par l'utilisation de Fuzzy Cognitive Map (FCM), permettant ainsi de faciliter l’émergence de scénarios pertinents et pédagogiques. En effet, l’émergence de scénarios ne garantit pas la pertinence de ceux-ci, c'est pourquoi nous utilisons des FCMs pour représenter des situations d’intérêts pédagogiques, qui sont ensuite injectées dans le système de planification afin de garantir la réalisation de ses situations.</p>
+              
             </div>
 				
                 </div>             
-            </div>     
-                    <hr>               					
-                      
-			  <h4 class="media-heading" style="text-align: center">Detailed works</h4>
-            <div class="row-fluid">
-                <div class="span12" >				
-                                    	      
-                <div class="media">
-                    <div class="media-body">
-                    <h4 class="media-heading"><a href="osp_proj.html">Solving probabilistic planning problems over-constrained by limited risk</a></h4>
-                    </div>
-                </div>
-                               
-                    <hr>
-                </div>
-                </div>
-
-            <div class="row-fluid">
-				<div class="span12" >				
-                                          
-                <div class="media">
-                    <div class="media-body">
-                    <h4 class="media-heading">Second work</h4>
-                    Descrition
-					</br></br>
-                    </div>
-                </div>
-                               
-                    <hr>
-                </div>
-                          
-            </div>
+            </div>             					
                
             <!--Edit Footer here-->
             <div id="footerInnerSeparator"></div>
