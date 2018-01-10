@@ -35,6 +35,7 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
     <link href="styles/custom.css" rel="stylesheet" type="text/css" />	
+	<script src="https://use.fontawesome.com/8851aada28.js"></script>
 	
 </head>
 <body id="pageBody">
@@ -91,23 +92,33 @@
                                           
                     <h3>Solving probabilistic planning problems over-constrained by limited risk</h3>
                     <h4><em>Definitions</em></h4>
-                    <p style="text-align: justify">A planning problem is <strong>over-constrained</strong> when it is not possible to reach all goals because of limited resources (e.g. fuel, energy...). In this case, only a subset of goals can be satisfied. Therefore, each goal is attached a utility score and the objective if to find a plan that satisfy a subset of goals maximizing the total goal utilities. This category of problems have been studied under the name of <strong>Over-Subscription Planning problems (OSPs)</strong>. Let's take an example: we consider that a rover on Mars must reach 4 locations (to explore and collect samples) but it has limited in energy that prevent it from reaching all the locations. In this case, we can say that the problem is over-constrained. We also suppose that each location has a utiliy value corresponding to the level of interest of the location. Therefore, we must select locations that are reachable and maximize the total utility score.</p>
+                    <p style="text-align: justify">A planning problem is <strong>over-constrained</strong> when it is not possible to reach all goals because of limited resources (e.g. fuel, energy...). In this case, only a subset of goals can be satisfied. Therefore, each goal is attached a utility score and the objective if to find a plan that satisfy a subset of goals maximizing the total goal utilities. This category of problems have been studied under the name of <strong>Over-Subscription Planning problems (OSPs)</strong>. Let's take an example: we consider that a rover on Mars must reach 4 locations (to explore and collect samples) but it has limited in energy that prevent it from reaching all the locations. In this case, we can say that the problem is over-constrained. We also suppose that each location has a utility value corresponding to the level of interest of the location. Therefore, we must select locations that are reachable and maximize the total utility score.</p>
 					<div style="text-align: center"><img src="images/osp1.png"> </img></div>
-				<p style="text-align: justify">In this example, the rover has not enough energy to reach L2. It has selected L1, L3 and L4 as it maximizes the total utility. These kinf of problems deal with determinstic planning problems that are over-constrained by limited ressources. In my work, I got interested in probabilistic planning where problems are over-constrained by limited risk the decision-maker is ready to take.</p>
-           		<p style="text-align: justify">In order to better understand the problematic of our work, we give some defintion that applied to the context of probabilistic planning:
+				<p style="text-align: justify">In this example, the rover has not enough energy to reach L2. It has selected L1, L3 and L4 as it maximizes the total utility. These kind of problems deal with deterministic planning problems that are over-constrained by limited resources. In my work, I got interested in probabilistic planning where problems are over-constrained by limited risk the decision-maker is ready to take.</p>
+           		<p style="text-align: justify">In order to better understand the problematic of our work, we give some definition that applied to the context of probabilistic planning:
            		<ul>
-				  <li><strong>risk</strong>: the probability of a solution to not reach all targetted goals</li>
-				  <li><strong>reachibility probability (RP)</strong>: the probability to reach all targetted goals</li>
+				  <li><strong>risk</strong>: the probability of a solution to not reach all targeted goals</li>
+				  <li><strong>reachability probability (RP)</strong>: the probability to reach all targeted goals</li>
 				  <li><strong>safe threshold (&alpha;)</strong>: a probability threshold</li>
 				  <li><strong>safe solution</strong>: a solution whose RP is above &alpha;
 				</ul>
           		 From these definitions, we say that: <strong>a problem is over-constrained by limited risk is there exist no safe solution.</strong>
-           		 Let's go back to our example. We suppose that the rover takes some risk every time he moves, for example because of bump and sand that could block it. In the below picture, there is no safe solution as reaching all 4 locations is too risky (with regard to the treshold alpha). Therefore, the problem is over-constrained by limited risk. In order to find a safe solution we reduce the number of targetted locations. In our example, the rover will only target L1, L2 and L4. In this context, we assume that it is prefereable to reach less locations instead of taking the risk thay the rover remains blocked and get lost.</p>
-           		<div style="text-align: center"><img src="images/osp2.jpg"> </img></div>
+           		 Let's go back to our example. We suppose that the rover takes some risk every time he moves, for example because of bump and sand that could block it. In the below picture, there is no safe solution as reaching all 4 locations is too risky (with regard to the threshold alpha). Therefore, the problem is over-constrained by limited risk. In order to find a safe solution we reduce the number of targeted locations. In our example, the rover will only target L1, L2 and L4. In this context, we assume that it is preferable to reach less locations instead of taking the risk that the rover remains blocked and get lost.</p>
+           		 <div style="text-align: center"><img src="images/osp2.jpg"> </img></div>
 				
                     <h4><em>Positioning and problematic</em></h4>
-					<p>Problems over-constrained by limited ressources have been study under the name of Over-subscription planning (OSP) problems or Partial satisfaction planning (PSP) problems. In my work, I proposed a novel approach to solve probabilistic planning problems that are over-constrained by the risk that the decision maker is ready to accept regarding the probabilities of reaching the goals. Our approach guarantees that the probability of reaching a state satisfying the selected goals is above a certain limit threshold. The difficulty is not to plan, as it can be done with a traditional probablistic planner, however, there is no guarantee that the reachability probability of the planned solution is above the threosold. Therefore, we propose an heuristic to find the best subset of goals that are reachable with a probability above the threshold. Here the best means the subset of goals that maximizes its utility score. Finding the best subset of goals is a difficult task because a full state space search is impossible as the number of possible states satisfying goals can quickly become intractably large. </p>
-                    <h4><em>Idea of the proposition</em></h4>
+					<p style="text-align: justify">Problems over-constrained by limited ressources have been study under the name of Over-subscription planning (OSP) problems or Partial satisfaction planning (PSP) problems. In my work, I proposed a novel approach to solve probabilistic planning problems that are over-constrained by the risk that the decision maker is ready to accept regarding the probabilities of reaching the goals. Our approach guarantees that the probability of reaching a state satisfying the selected goals is above a certain limit threshold. The difficulty is not to plan, as it can be done with a traditional probablistic planner, however, there is no guarantee that the reachability probability of the planned solution is above the threosold. Therefore, we propose an heuristic to find the best subset of goals that are reachable with a probability above the threshold. Here the best means the subset of goals that maximizes its utility score. Finding the best subset of goals is a difficult task because a full state space search is impossible as the number of possible states satisfying goals can quickly become intractably large. </p>
+                    <h4><em>General idea</em></h4>
+                    <p style="text-align: justify">The idea of the proposed heuristic is to relax/simplify the initial problem so that it becomes possible to identify goal states and to estimate the reachability probability and the cost to plan a goal state from another goal state. From these estimations, we build a graph where:
+                    <ul>
+					  <li>nodes are goal states</li>
+					  <li>the value of a node is the sum of the utilities of goals included in the goal state associated to that node</li>
+					  <li>an edge between 2 goal states is labeled with the reachability probability and the cost between the 2 goal states</li>
+					</ul>
+                    Finally, we use a search path algorithm to find the best subset of goals in this graph.</p>
+                    <div style="text-align: center"><img src="images/hosp.jpg"> </img></div>
+                    <p style="text-align: justify">In the below example, L0 is the initial state and all other nodes are goal states. The left part of the figure is graph representation of the relaxed problem with cost and RP estimations. The right part is the selected path that maximizes goal utilities while not exceeding the threshold &alpha;. In this example, the best subset of goals computed from the heuristic is to reach L3, L2, and L6. That is an estimation of the goals that are reachable with a safe solution.</p>
+                    <u>All details of this work</u>: <a href="files/ictai-2017.pdf" title="download" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> 
                 </div>             
             </div>             					
                
